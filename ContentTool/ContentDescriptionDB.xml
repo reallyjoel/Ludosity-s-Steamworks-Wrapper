@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<ContentDescriptionRecord>
+	<VersionNum>10</VersionNum>
+	<AllAppsRecord>
+		<AppRecord AppId="46000" >
+			<AppId>46000</AppId>
+			<Name>ManagedSteam</Name>
+			<InstallDirName>ManagedSteam</InstallDirName>
+			<MinCacheFileSizeMB>0</MinCacheFileSizeMB>
+			<MaxCacheFileSizeMB>0</MaxCacheFileSizeMB>
+			<AppLaunchOptionsRecord>
+				<AppLaunchOptionRecord LaunchOptionIdx="0" >
+					<Description>Windows</Description>
+					<CommandLine>Windows.exe</CommandLine>
+					<AppIconIdx>0</AppIconIdx>
+					<bNoDesktopShortcut>0</bNoDesktopShortcut>
+					<bNoStartMenuShortcut>0</bNoStartMenuShortcut>
+					<bLongRunningUnattended>0</bLongRunningUnattended>
+					<ValidOSList>windows</ValidOSList>
+				</AppLaunchOptionRecord>
+				<AppLaunchOptionRecord LaunchOptionIdx="1" >
+					<Description>Mac</Description>
+					<CommandLine>Mac.app</CommandLine>
+					<AppIconIdx>4294967295</AppIconIdx>
+					<bNoDesktopShortcut>0</bNoDesktopShortcut>
+					<bNoStartMenuShortcut>0</bNoStartMenuShortcut>
+					<bLongRunningUnattended>0</bLongRunningUnattended>
+					<ValidOSList>macos</ValidOSList>
+				</AppLaunchOptionRecord>
+			</AppLaunchOptionsRecord>
+			<AppIconsRecord>
+			</AppIconsRecord>
+			<OnFirstLaunch>4294967295</OnFirstLaunch>
+			<IsBandwidthGreedy>1</IsBandwidthGreedy>
+			<AppVersionsRecord>
+				<AppVersionRecord VersionId="0" >
+					<Description>0.0.0.1</Description>
+					<VersionId>0</VersionId>
+					<bIsNotAvailable>0</bIsNotAvailable>
+					<LaunchOptionIdsRecord>
+						<LaunchOptionId>0</LaunchOptionId>
+					</LaunchOptionIdsRecord>
+					<DepotEncryptionKey></DepotEncryptionKey>
+					<bIsEncryptionKeyAvailable>0</bIsEncryptionKeyAvailable>
+					<bIsRebased>0</bIsRebased>
+				</AppVersionRecord>
+			</AppVersionsRecord>
+			<CurrentVersionId>0</CurrentVersionId>
+			<FilesystemsRecord>
+				<FilesystemRecord FilesystemIdx="0" >
+					<AppId>46009</AppId>
+					<MountName></MountName>
+					<IsOptional>0</IsOptional>
+				</FilesystemRecord>
+			</FilesystemsRecord>
+			<TrickleVersionId>4294967295</TrickleVersionId>
+			<AppUserDefinedRecord>
+				<icon></icon>
+				<order>1</order>
+				<state>eStateAvailable</state>
+				<gamedir>ManagedSteam</gamedir>
+				<homepage></homepage>
+				<NoServers>1</NoServers>
+				<developer>Ludosity Interactive</developer>
+				<ValidOSList>windows, macos</ValidOSList>
+				<primarycache>46009</primarycache>
+				<serverbrowsername></serverbrowsername>
+			</AppUserDefinedRecord>
+			<BetaVersionPassword>foo</BetaVersionPassword>
+			<BetaVersionId>4294967295</BetaVersionId>
+			<ManifestOnlyApp>1</ManifestOnlyApp>
+		</AppRecord>
+		<AppRecord AppId="46009" >
+			<AppId>46009</AppId>
+			<Name>ManagedSteamData</Name>
+			<InstallDirName>ManagedSteamData</InstallDirName>
+			<MinCacheFileSizeMB>54</MinCacheFileSizeMB>
+			<MaxCacheFileSizeMB>54</MaxCacheFileSizeMB>
+			<AppLaunchOptionsRecord>
+				<AppLaunchOptionRecord LaunchOptionIdx="0" >
+					<Description>Default</Description>
+					<CommandLine>ManagedSteamData</CommandLine>
+					<AppIconIdx>0</AppIconIdx>
+					<bNoDesktopShortcut>0</bNoDesktopShortcut>
+					<bNoStartMenuShortcut>0</bNoStartMenuShortcut>
+					<bLongRunningUnattended>0</bLongRunningUnattended>
+				</AppLaunchOptionRecord>
+			</AppLaunchOptionsRecord>
+			<AppIconsRecord>
+			</AppIconsRecord>
+			<OnFirstLaunch>4294967295</OnFirstLaunch>
+			<IsBandwidthGreedy>1</IsBandwidthGreedy>
+			<AppVersionsRecord>
+				<AppVersionRecord VersionId="0" >
+					<Description>0</Description>
+					<VersionId>0</VersionId>
+					<bIsNotAvailable>0</bIsNotAvailable>
+					<LaunchOptionIdsRecord>
+						<LaunchOptionId>0</LaunchOptionId>
+					</LaunchOptionIdsRecord>
+					<DepotEncryptionKey>6F788A8B7CB9C4C4B89B6AF100D9371A</DepotEncryptionKey>
+					<bIsEncryptionKeyAvailable>1</bIsEncryptionKeyAvailable>
+					<bIsRebased>0</bIsRebased>
+				</AppVersionRecord>
+			</AppVersionsRecord>
+			<CurrentVersionId>0</CurrentVersionId>
+			<FilesystemsRecord>
+			</FilesystemsRecord>
+			<TrickleVersionId>4294967295</TrickleVersionId>
+			<BetaVersionPassword>foo</BetaVersionPassword>
+			<BetaVersionId>4294967295</BetaVersionId>
+			<AppOfManifestOnlyCache>46000</AppOfManifestOnlyCache>
+		</AppRecord>
+	</AllAppsRecord>
+	<AllSubscriptionsRecord>
+		<SubscriptionRecord SubscriptionId="0" >
+			<SubscriptionId>0</SubscriptionId>
+			<Name>ManagedSteam</Name>
+			<BillingType>NoCost</BillingType>
+			<CostInCents>0</CostInCents>
+			<SubscriptionAppIdsRecord>
+				<AppId>46000</AppId>
+			</SubscriptionAppIdsRecord>
+			<OnSubscribeRunAppId>4294967295</OnSubscribeRunAppId>
+			<OnSubscribeRunLaunchOptionIdx>4294967295</OnSubscribeRunLaunchOptionIdx>
+		</SubscriptionRecord>
+		<SubscriptionRecord SubscriptionId="1" >
+			<SubscriptionId>1</SubscriptionId>
+			<Name>ManagedSteamData</Name>
+			<BillingType>NoCost</BillingType>
+			<CostInCents>0</CostInCents>
+			<SubscriptionAppIdsRecord>
+				<AppId>46009</AppId>
+			</SubscriptionAppIdsRecord>
+			<OnSubscribeRunAppId>4294967295</OnSubscribeRunAppId>
+			<OnSubscribeRunLaunchOptionIdx>4294967295</OnSubscribeRunLaunchOptionIdx>
+		</SubscriptionRecord>
+	</AllSubscriptionsRecord>
+	<LastChangedExistingAppOrSubscriptionTime>2011-03-01T12:53:36.000000Z</LastChangedExistingAppOrSubscriptionTime>
+	<AllAppsPublicKeysRecord>
+		<AppPublicKeyData KeyIdx="46009" >0x30819d300d06092a864886f70d010101050003818b0030818702818100c109842a7efd349f7bf00d71af9b7958a598a55f2197f95ec8ca0fb4f4bb658b41014201ecb0a54260bc4b30f77fac784f047d96ceebe4d368e0a5748dc697f8c38fc7ae5b98943da4c313317737d58fdcc675464ba044d72194b452c7a27dd25c6c46c6d386a6f476aeeb787cca24b50efc59ea51e1322917b6545283ea134d020111</AppPublicKeyData>
+	</AllAppsPublicKeysRecord>
+	<AllAppsEncryptedPrivateKeysRecord>
+		<AppPrivateKeyData KeyIdx="46009" >0x2fd5e32e8a0c541395acccc5f9bb72e931980450eb8e4d6b5c94afb7bbc64d4ec55a458e9950623acdba5422d1231875ca831a05039634c98e7758bc3da9004ef5f8fb7bf9b0419671c86ba7ef8ecad9c8aed31eeb949db590179f34067b42d3a75e260cbd79d0f252fd446ed8a8904596e7eb7b013edc5f4616340304173be088a7148d10a965d4efc384b72f97fabee279284c570f8c467c03a363392f7e2293688ade8d2a71bec148e7d4adb560368407a857e6a09a48921866a924eaea69e86f52e9146fe1395302932bdfa5506e8f1dd4eeccdaac7abf782da0c9c61a7a2075b86d6d2df2006122b0b4542c8384c1281f925d4eb1ce423a798e15a3f0bce7a17ef7e5938bfd1ba8d1bbdb4f9a191f81b1bd6dd8266db441b4cf5e6ba386fdc669ce1246c4862cd8876a2c045f4c1f034082e7f3ab1bc7ec6120378487f3bd5039adbaa7141448c979b405f10b48894454b256cc4f8d9cdc941fd3023f228b9c3424e1655b5566daf23a663e6402675d40ff2adad6e0239320dae6df8425eced41783279c8b37df1467f7b913cc8930f491725ca579142452cb794969893f5de2689eda2ba1a90344c665871c2d9e4fca29aaf06513ba8ffcbc68ceab38819f512a2eb20549e431fad0da21eb348521df98cfb504c5948f5faebe99e508dfaa17fc02ca6cabc78d0c4840d15cbe0cdd52ff28788b59d39c0582f07a8a9df464e6a2754de37d5c2be247126aa828af93683e44e35d703654f0d63f638630c4e826c0a208a70bbfb330db86053c43fafd22e37033f8b74125686717c94ca18cf66f0ae88fc00188f98c811a97c032e696a11fb0687c9c01749fe13eb1e2da45ed3cfa7a74492be6b02f1f9b9018b7b6f2d60c06b928644f386e46f53b1c280203ac91acd60d845a2c5859c6fe42400dd393c9c436bc992db0cce4e35be02f22ce35802</AppPrivateKeyData>
+	</AllAppsEncryptedPrivateKeysRecord>
+</ContentDescriptionRecord>

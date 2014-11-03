@@ -1,0 +1,18 @@
+Valve Content Tool Studio Workspace File, Format Version 2.10
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+###############################################################################
+
+[Project]
+Project=ManagedSteamData
+
+[Settings]
+DepotLocation=..\Depot
+BuildState=Release
+LastVersion=0
+Encryption=Constant
+
+[Mapping]
+<root>=..\..\Build
+
+[Exclude Files]
+steam_appid.txt

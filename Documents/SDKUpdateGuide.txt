@@ -1,0 +1,11 @@
+Updating the Steamworks SDK.
+
+Change the SDK version in the VersionInfo.cfg.template file.
+
+Check if new overlay types have been added and update OverlayDialog.cs if needed.
+
+Make sure that all enums in the SteamTypes folder are in sync with the C++ code
+
+Make sure that all the structures in the CallbackStructure namespace are up-to-date with the SDK.
+
+Update the steam_api.dll files in the UnityProjects folder.

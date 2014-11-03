@@ -1,0 +1,438 @@
+# depslib dependency file v1.0
+1381158090 source:../SteamAPIWrap/Apps.cpp
+	"Precompiled.hpp"
+	"Apps.hpp"
+	"MemoryHelpers.h"
+
+1381158090 ../SteamAPIWrap/Precompiled.hpp
+	"steam_api.h"
+	"steam_gameserver.h"
+	"Macros.hpp"
+	"Types.h"
+	"ErrorCodes.hpp"
+
+1373912273 ../SteamworksSDK/public/steam/steam_api.h
+	"isteamclient.h"
+	"isteamuser.h"
+	"isteamfriends.h"
+	"isteamutils.h"
+	"isteammatchmaking.h"
+	"isteamuserstats.h"
+	"isteamapps.h"
+	"isteamnetworking.h"
+	"isteamremotestorage.h"
+	"isteamscreenshots.h"
+	"isteamhttp.h"
+	"isteamunifiedmessages.h"
+	"isteamcontroller.h"
+	"steamps3params.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamclient.h
+	"steamtypes.h"
+	"steamclientpublic.h"
+
+1373912273 ../SteamworksSDK/public/steam/steamtypes.h
+
+1373912273 ../SteamworksSDK/public/steam/steamclientpublic.h
+	"steamtypes.h"
+	"steamuniverse.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamuser.h
+	"isteamclient.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamfriends.h
+	"isteamclient.h"
+	"steamclientpublic.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamutils.h
+	"isteamclient.h"
+
+1373911014 ../SteamworksSDK/public/steam/isteammatchmaking.h
+	"steamtypes.h"
+	"steamclientpublic.h"
+	"matchmakingtypes.h"
+	"isteamclient.h"
+	"isteamfriends.h"
+
+1373911014 ../SteamworksSDK/public/steam/matchmakingtypes.h
+	<stdio.h>
+	<string.h>
+
+1373911014 ../SteamworksSDK/public/steam/isteamuserstats.h
+	"isteamclient.h"
+	"isteamremotestorage.h"
+
+1374094037 ../SteamworksSDK/public/steam/isteamremotestorage.h
+	"isteamclient.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamapps.h
+
+1373911014 ../SteamworksSDK/public/steam/isteamnetworking.h
+	"steamtypes.h"
+	"steamclientpublic.h"
+
+1373911014 ../SteamworksSDK/public/steam/isteamscreenshots.h
+	"isteamclient.h"
+
+1373912273 ../SteamworksSDK/public/steam/isteamhttp.h
+	"isteamclient.h"
+	"steamhttpenums.h"
+
+1373912273 ../SteamworksSDK/public/steam/steamhttpenums.h
+
+1373911014 ../SteamworksSDK/public/steam/isteamunifiedmessages.h
+
+1373911014 ../SteamworksSDK/public/steam/steamps3params.h
+
+1373911014 ../SteamworksSDK/public/steam/steam_gameserver.h
+	"steam_api.h"
+	"isteamgameserver.h"
+	"isteamgameserverstats.h"
+
+1373911014 ../SteamworksSDK/public/steam/isteamgameserver.h
+	"isteamclient.h"
+
+1373911014 ../SteamworksSDK/public/steam/isteamgameserverstats.h
+	"isteamclient.h"
+
+1381158090 ../SteamAPIWrap/Macros.hpp
+
+1381158090 ../SteamAPIWrap/Types.h
+	"steamtypes.h"
+
+1381158090 ../SteamAPIWrap/ErrorCodes.hpp
+	<ErrorCodes.cs>
+
+1363699780 ../ManagedSteam/SharedEnums/ErrorCodes.cs
+
+1381158090 ../SteamAPIWrap/Apps.hpp
+	"Apps.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/Apps.h
+
+1381158090 ../SteamAPIWrap/Singleton.hpp
+
+1381158090 ../SteamAPIWrap/Services.hpp
+	"Services.h"
+	"Singleton.hpp"
+	"ErrorCodes.hpp"
+	"LoadStatus.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/Services.h
+
+1381158090 ../SteamAPIWrap/LoadStatus.hpp
+	<LoadStatus.cs>
+
+1363699792 ../ManagedSteam/SharedEnums/LoadStatus.cs
+
+1381158090 ../SteamAPIWrap/CallbackID.hpp
+	<CallbackID.cs>
+
+1363699803 ../ManagedSteam/SharedEnums/CallbackID.cs
+
+1381158090 ../SteamAPIWrap/ResultID.hpp
+	<ResultID.cs>
+
+1363699816 ../ManagedSteam/SharedEnums/ResultID.cs
+
+1381158090 ../SteamAPIWrap/MemoryHelpers.h
+	"Types.h"
+
+1381158090 source:../SteamAPIWrap/Cloud.cpp
+	"Precompiled.hpp"
+	"Cloud.hpp"
+	"Services.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/Cloud.hpp
+	"Cloud.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"ConvertedStructures.hpp"
+	"ResultID.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/Cloud.h
+
+1381158090 ../SteamAPIWrap/ConvertedStructures.hpp
+
+1381158090 ../SteamAPIWrap/Helper.hpp
+
+1381158090 source:../SteamAPIWrap/Friends.cpp
+	"Precompiled.hpp"
+	"Friends.hpp"
+	"OverlayDialog.hpp"
+	"OverlayDialogToUser.hpp"
+	"MemoryHelpers.h"
+	<fstream>
+
+1381158090 ../SteamAPIWrap/Friends.hpp
+	"Friends.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/Friends.h
+
+1381158090 ../SteamAPIWrap/OverlayDialog.hpp
+	<OverlayDialog.cs>
+
+1363700073 ../ManagedSteam/SharedEnums/OverlayDialog.cs
+
+1381158090 ../SteamAPIWrap/OverlayDialogToUser.hpp
+	<OverlayDialogToUser.cs>
+
+1381159770 ../ManagedSteam/SharedEnums/OverlayDialogToUser.cs
+
+1381158090 source:../SteamAPIWrap/GameServer.cpp
+	"Precompiled.hpp"
+	"GameServer.hpp"
+	"OverlayDialog.hpp"
+	"OverlayDialogToUser.hpp"
+	"MemoryHelpers.h"
+
+1381158090 ../SteamAPIWrap/GameServer.hpp
+	"GameServer.h"
+	"Singleton.hpp"
+	"ServicesGameServer.hpp"
+	"ConvertedStructures.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/GameServer.h
+
+1381158090 ../SteamAPIWrap/ServicesGameServer.hpp
+	"ServicesGameServer.h"
+	"Singleton.hpp"
+	"ErrorCodes.hpp"
+	"LoadStatus.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/ServicesGameServer.h
+
+1381158090 source:../SteamAPIWrap/GameServerStats.cpp
+	"Precompiled.hpp"
+	"GameServerStats.hpp"
+	"OverlayDialog.hpp"
+	"OverlayDialogToUser.hpp"
+	"MemoryHelpers.h"
+	"isteamgameserver.h"
+
+1381158090 ../SteamAPIWrap/GameServerStats.hpp
+	"GameServerStats.h"
+	"Singleton.hpp"
+	"ServicesGameServer.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/GameServerStats.h
+
+1381158090 source:../SteamAPIWrap/HTTP.cpp
+	"Precompiled.hpp"
+	"HTTP.hpp"
+	"MemoryHelpers.h"
+
+1381158090 ../SteamAPIWrap/HTTP.hpp
+	"HTTP.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/HTTP.h
+
+1381158090 source:../SteamAPIWrap/Helper.cpp
+	"Precompiled.hpp"
+	"Helper.hpp"
+
+1381158090 source:../SteamAPIWrap/MatchMaking.cpp
+	"Precompiled.hpp"
+	"MatchMaking.hpp"
+	"OverlayDialog.hpp"
+	"OverlayDialogToUser.hpp"
+	"MemoryHelpers.h"
+
+1381158090 ../SteamAPIWrap/MatchMaking.hpp
+	"MatchMaking.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"ConvertedStructures.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/MatchMaking.h
+
+1381159846 source:../SteamAPIWrap/MatchMakingServers.cpp
+	"Precompiled.hpp"
+	"MatchMakingServers.hpp"
+
+1381158090 ../SteamAPIWrap/MatchMakingServers.hpp
+	"MatchmakingServers.h"
+	"Singleton.hpp"
+
+1381158090 ../SteamAPIWrap/MatchmakingServers.h
+
+1381158090 source:../SteamAPIWrap/MatchmakingPingResponse.cpp
+	"Precompiled.hpp"
+	"MatchmakingPingResponse.hpp"
+
+1381158090 ../SteamAPIWrap/MatchmakingPingResponse.hpp
+	"MatchmakingPingResponse.h"
+
+1381158090 ../SteamAPIWrap/MatchmakingPingResponse.h
+
+1381158090 source:../SteamAPIWrap/MatchmakingPlayersResponse.cpp
+	"Precompiled.hpp"
+	"MatchmakingPlayersResponse.hpp"
+
+1381158090 ../SteamAPIWrap/MatchmakingPlayersResponse.hpp
+	"MatchmakingPlayersResponse.h"
+
+1381158090 ../SteamAPIWrap/MatchmakingPlayersResponse.h
+
+1381159868 source:../SteamAPIWrap/MatchmakingRulesResponse.cpp
+	"Precompiled.hpp"
+	"MatchMakingRulesResponse.hpp"
+
+1381158090 ../SteamAPIWrap/MatchMakingRulesResponse.hpp
+	"MatchmakingRulesResponse.h"
+
+1381158090 ../SteamAPIWrap/MatchmakingRulesResponse.h
+
+1381158090 source:../SteamAPIWrap/MatchmakingServerListResponse.cpp
+	"Precompiled.hpp"
+	"MatchmakingServerListResponse.hpp"
+
+1381158090 ../SteamAPIWrap/MatchmakingServerListResponse.hpp
+	"MatchmakingServerListResponse.h"
+
+1381158090 ../SteamAPIWrap/MatchmakingServerListResponse.h
+
+1381158090 source:../SteamAPIWrap/Networking.cpp
+	"Precompiled.hpp"
+	"Networking.hpp"
+	"OverlayDialog.hpp"
+	"OverlayDialogToUser.hpp"
+	"MemoryHelpers.h"
+	"isteamnetworking.h"
+
+1381158090 ../SteamAPIWrap/Networking.hpp
+	"Networking.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"ConvertedStructures.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/Networking.h
+
+1381158090 source:../SteamAPIWrap/Precompiled.cpp
+	"Precompiled.hpp"
+
+1381158090 source:../SteamAPIWrap/Screenshots.cpp
+	"Precompiled.hpp"
+	"Screenshots.hpp"
+	"MemoryHelpers.h"
+
+1381158090 ../SteamAPIWrap/Screenshots.hpp
+	"Screenshots.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/Screenshots.h
+
+1381159880 source:../SteamAPIWrap/Services.cpp
+	"Precompiled.hpp"
+	"Services.hpp"
+	"VersionInfo.hpp"
+	"ErrorCodes.hpp"
+	"Cloud.hpp"
+	"Stats.hpp"
+	"User.hpp"
+	"Friends.hpp"
+	"MatchMaking.hpp"
+	"MatchMakingServers.hpp"
+	"Networking.hpp"
+	"Utils.hpp"
+	"Apps.hpp"
+	"HTTP.hpp"
+	"Screenshots.hpp"
+
+1381158090 ../SteamAPIWrap/VersionInfo.hpp
+
+1381158090 ../SteamAPIWrap/Stats.hpp
+	"Stats.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"ConvertedStructures.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+	"Helper.hpp"
+
+1381158090 ../SteamAPIWrap/Stats.h
+
+1381158090 ../SteamAPIWrap/User.hpp
+	"User.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/User.h
+
+1381158090 ../SteamAPIWrap/Utils.hpp
+	"Utils.h"
+	"Singleton.hpp"
+	"Services.hpp"
+	"CallbackID.hpp"
+	"ResultID.hpp"
+
+1381158090 ../SteamAPIWrap/Utils.h
+
+1381158090 source:../SteamAPIWrap/ServicesGameServer.cpp
+	"Precompiled.hpp"
+	"ServicesGameServer.hpp"
+	"VersionInfo.hpp"
+	"ErrorCodes.hpp"
+	"GameServer.hpp"
+	"GameServerStats.hpp"
+	"Networking.hpp"
+
+1381158090 source:../SteamAPIWrap/Singleton.cpp
+	"Precompiled.hpp"
+	"Singleton.hpp"
+
+1381158090 source:../SteamAPIWrap/Stats.cpp
+	"Precompiled.hpp"
+	"Stats.hpp"
+	"MemoryHelpers.h"
+
+1381159930 source:../SteamAPIWrap/User.cpp
+	"Precompiled.hpp"
+	"User.hpp"
+
+1381158090 source:../SteamAPIWrap/Utils.cpp
+	"Precompiled.hpp"
+	"Utils.hpp"
+
+1381158090 source:../SteamAPIWrap/VersionInfo.cpp
+	"Precompiled.hpp"
+	"VersionInfo.hpp"
+
+1373912151 ../SteamworksSDK/public/steam/steamuniverse.h
+
+1373912151 ../SteamworksSDK/public/steam/isteamcontroller.h
+	"isteamclient.h"

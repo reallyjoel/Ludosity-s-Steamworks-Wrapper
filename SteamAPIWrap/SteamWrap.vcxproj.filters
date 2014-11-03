@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Interop">
+      <UniqueIdentifier>{3c6a7fbd-0f1c-4898-b9db-586c703254cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generated">
+      <UniqueIdentifier>{e12313de-30db-4b5e-9e7a-779ad2a46e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Generated">
+      <UniqueIdentifier>{3ba43b43-7b94-4f46-b65a-2d0856b848aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SharedEnums">
+      <UniqueIdentifier>{d73a1c94-257f-4122-bfbc-5091be45b67f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CHeaders">
+      <UniqueIdentifier>{2d0b0f19-46b4-48c8-b8be-fe5c51d10443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Precompiled.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCodes.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloud.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InteropMain.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloud.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadStatus.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files\CHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CallbackID.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stats.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultID.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertedStructures.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Friends.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Friends.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayDialog.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayDialogToUser.hpp">
+      <Filter>Header Files\SharedEnums</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchMaking.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchMaking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServer.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="ServicesGameServer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ServicesGameServer.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerStats.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="GameServerStats.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingServers.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchMakingServers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingServerListResponse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingServerListResponse.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingPingResponse.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingPingResponse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingPlayersResponse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingPlayersResponse.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchMakingRulesResponse.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatchmakingRulesResponse.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Apps.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Apps.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTP.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Screenshots.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screenshots.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UGC.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamController.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+    <ClInclude Include="Hmd.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hmd.h">
+      <Filter>Header Files\Interop</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Services.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionInfo.cpp">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionInfo.template">
+      <Filter>Source Files\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Friends.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchMaking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameServerStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServicesGameServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchMakingServers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchmakingServerListResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchmakingPingResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchmakingPlayersResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatchmakingRulesResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Apps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HTTP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Screenshots.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UGC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SteamAPIWrap.rc">
+      <Filter>Source Files\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

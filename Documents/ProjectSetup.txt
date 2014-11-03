@@ -1,0 +1,105 @@
+=Software requirements=
+The project and solution files are made in MS Visual Studio 2010.
+One XNA 4.0 project is included, but is not needed to build the library.
+To be able to build the project correctly, the 'path' environment variable must point to the 'bin' folder in the TortoiseSVN install folder. This is needed for the subwcrev tool. (PreBuild.bat)
+
+
+The following files may be changed when running the InteropConvert.bat file:
+ManagedSteam/Generated/InteropMain.cs
+ManagedSteam/Generated/InteropMain.PreProcessor.h
+
+
+
+Adding new features from the Steamworks SDK.
+(The Friends inteface is used in all the examples, just replace it with the current class name)
+
+=Export a new interface=
+Create Friends.cpp, Friends.hpp and Friends.h and add them to the SteamAPIWrap project. See the ExmapleFriends* files for the basic structure of the files.
+
+In the Startup method in the CServices class, initialize the interface by calling
+CFriends::Instance().SetSteamInterface(SteamFriends());
+This makes it possible to use the Friends class from any other point in the code
+
+Create the public IFriends interface in the Friends.cs file in the project root, and the internal Friends class in the Friends.cs file in the Implementations folder/namespace. The Friends class shall inherit the SteamService class and the IFriends interface.
+
+
+=Copy constants for an interface=
+Open the Constants.cs file in the ManagedSteam project.
+Add a new 'public static class' named Friends to the Constants class. (Add documentation in the same style as the other classes)
+Open the related Steamworks file, ISteamFriends.h
+Take all the constant variables and anonymous enums and copy them to the Friends class.
+Make all the variables be 'public const' and remove all the Hungarian notation prefixes from the names. (Things like k_cch, k_c, k_un etc.)
+
+
+=Add a new enum type=
+In the ISteamFriends.h file there is an enum named EFriendRelationship that is used in some method calls. To make this usable in C# we have to export these values. This is done by creating a file called FriendRelationship.cs in the SharedEnums folder in the ManagedSteam project. Use the ExampleEnum.cs as a template and replace REPLACE_THIS_WITH_SDK_ENUM_NAME with FriendRelationship. Then copy all the enum values from the ISteamDriends.h file and paste them in the indicated place in the file. Remove the k_EFriendRelationship prefix from the enum values.
+If wee need to use the enum value from C++ code, we will have to create a file named FriendRelationship.h in the SharedEnums folder in the SteamAPIWrap project. Use the ExampleEnum.h template and replace the ENTER_FILE_NAME_HERE part with the current file name (FriendRelationship in this case).
+What this technique does is that it enables us to use the same code for enums in both C++ and C#. This makes it much easier to keep values in sync. 
+
+=Add methods to an existing interface=
+Keep the method order the same in all files to make it easier to spot newly added (or missed) methods in Steamworks updates.
+
+Start by copying the public methods from the Steamworks interface (ISteamFriends) to the Friends.h file (GetPersonaName -> EnumerateFollowingList), ignore all methods inside #ifdef PS3 blocks.
+Replace 'virtual' with 'ManagedSteam_API' and remove the ' = 0' part at the end of each method.
+Replace all parameter and return types according to the table in ConversionTable.txt.
+Add the 'Friends_' prefix to all functions.
+Copy all the functions from Friends.h and paste then into the Friends class in Friends.hpp
+Remove the 'ManagedSteam_API' part and the 'Friends_' prefix.
+Create implementations for all functions and methods from the Friends.h and Friends.hpp files in the Friends.cpp file. (Using a keyboard shortcut for the 'Create Implementation' command in VisualAssistX is strongly recommended.)
+
+The Friends_* functions should only act as proxies for the CFriends class methods. So the only thing that shall be in these functions is a call to the matching method in the CFriends class. E.g. 
+'return CFriends::Instance().GetPersonaName()'
+
+If any type conversion have to be done on the C++ side it should be done in the CFriends methods. E.g. in the 'GetFriendByIndex' method the return value have to be converted from the CSteamID type to a SteamID (u64 (unsigned 64-bit integer)).
+
+
+=Callbacks and async results=
+There is two types of callbacks in the Steamworks SDK.
+General callbacks that can be called at any time (but often as a response to methods calls), and result callbacks that are a direct, but delayed, result of a method call. But from the C# side they are handled almost the same at the moment.
+Result callbacks can be identified by their return type SteamAPICall_t. Take a look at Cloud.FileShare how they are handled.
+
+*C++
+To enable a callback in C++ we have to do two things.
+First we have to create an object that handles the callback. This is done with the SW_CALLBACK macro. (All callback macros shall be placed in the top of the class, in the same order as their structure appear in the Steamworks files.)
+The first parameter to the macro is the class type that will receive the callback, this shall always be the same as the class that the callback is placed into. 
+The second parameter is the kind of structure that the callback will receive. 
+The third parameter is the name of the callback, this value shall be the same as the steam struct minus the '_t' at the end. E.g. A callback that receives 'PersonaStateChange_t' structures is written 'SW_CALLBACK(CFriends, PersonaStateChange_t, PersonaStateChange);'.
+
+The macro will automatically create a method named 'OnPersonaStateChange' and an object named 'nativePersonaStateChangeCallback'. 
+
+It will also use the 'ECallbackID::PersonaStateChange' enum value, which have to be added manually to the SharedEnum/ResultID.cs file. 
+
+
+The 'nativePersonaStateChangeCallback' object will have to be initialized in the CFriends constructor. 
+
+To do this simply add ', nativePersonaStateChangeCallback(this, &CFriends::OnPersonaStateChange)' to the constructor initializer list (in the same relative position as the macro).
+
+Once this is done, the generated code will automatically pass the callback to the C# code.
+
+*C#
+All callbacks are received by the NativeCallbacks and NativeResultCallbacks methods in the Steam class. It then uses a dictionary to figure out which internal callback to use for each type of Steam callback. The shared enum CallbackID is used for this identification. Each SteamService class 
+
+CallBackStructures.cs
+First we have to create a managed version of the callback structure we want to use (PersonaStateChange_t), this should be named the same as the third parameter in the C++ macro, in this case PersonaStateChange.
+Add a comment and StructLayout attribute in the same way as the other structs in the file.
+Add private variables of the same type, and in the same order as the C++ struct.
+Create public read only properties that expose the struct values.
+Create the internal 'Create' method in the same way as all the other structs.
+If the struct have bools or strings, take a look at how UserAchievementStored is done.
+An example of arrays can be found in CloudEnumerateUserPublishedFilesResult.
+Many values that are exposed as simple int, unsigned int in the C++ code have handle structs in the C# code. This is to make it easier for the user to keep track of all the different types returned.
+The NativeHelpers.ConvertStruct does an automatic size check on all structs, so if the managed and native structs have different sizes, an exception will be thrown to avoid Unity from crashing completely.
+
+When the callback structure is created, we have to enable the actual callback.
+In the class implementing the current interface (the Friends class, in the ManagedSteam.Implementation namespace, in this case):
+First of we have to create a list of the current callback struct that will store all the data returned from Steam. E.g. 'List<GameOverlayActivated> gameOverlayActivated'.
+In the constructor, register a new lambda expression (anonymous delegate/method) in the 'Callbacks' dictionary.
+The key in the dictionary is the 'CallbackID.GameOverlayActivated' enum value. The lambda expression is the value and shall receive two parameters, a data pointer and size. The pointer and size should then be passed to the 'GameOverlayActivated.Create' static method and the result from the Create method shall be placed in the gameOverlayActivated list. (Take a look at any class that uses callbacks for how this is done.)
+Add a public event of type 'CallbackEvent<GameOverlayActivated>' and named 'GameOverlayActivated' to both the interface and class. E.g. 'public event CallbackEvent<GameOverlayActivated> GameOverlayActivated;'
+
+In the 'ReleaseManagedResources' method, add:
+	gameOverlayActivated = null;
+	GameOverlayActivated = null;
+and in the 'InvokeEvents' method add:
+	InvokeEvents(gameOverlayActivated, GameOverlayActivated);
+

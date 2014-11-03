@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagedSteam</RootNamespace>
+    <AssemblyName>SteamworksManaged</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CSHARP;STEAMAPIWRAP_FULL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Release\SteamworksManaged.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release Lite|AnyCPU'">
+    <OutputPath>bin\Release Lite\</OutputPath>
+    <DefineConstants>TRACE;CSHARP;STEAMAPIWRAP_LITE</DefineConstants>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <DocumentationFile>bin\Release Lite\SteamworksManaged.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS;TRACE;CSHARP;STEAMAPIWRAP_FULL</DefineConstants>
+    <Optimize>false</Optimize>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <DocumentationFile>bin\Debug\SteamworksManaged.xml</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Lite|AnyCPU'">
+    <OutputPath>bin\Debug Lite\</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS;TRACE;CSHARP;STEAMAPIWRAP_LITE</DefineConstants>
+    <Optimize>false</Optimize>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <DocumentationFile>bin\Debug Lite\SteamworksManaged.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;CODE_ANALYSIS;CSHARP;STEAMAPIWRAP_FULL;STEAMAPI_X64</DefineConstants>
+    <DocumentationFile>bin\Release\SteamworksManaged.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Release\SteamworksManaged.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release Lite|x64'">
+    <OutputPath>bin\x64\Release Lite\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;CODE_ANALYSIS;CSHARP;STEAMAPIWRAP_LITE;STEAMAPI_X64</DefineConstants>
+    <DocumentationFile>bin\Release Lite\SteamworksManaged.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;CSHARP;STEAMAPIWRAP_FULL;STEAMAPI_X64</DefineConstants>
+    <DocumentationFile>bin\Debug\SteamworksManaged.XML</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysisRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Lite|x64'">
+    <OutputPath>bin\x64\Debug Lite\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;CSHARP;STEAMAPIWRAP_LITE;STEAMAPI_X64</DefineConstants>
+    <DocumentationFile>bin\Debug Lite\SteamworksManaged.XML</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ManagedSteam.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Apps.cs" />
+    <Compile Include="CallbackStructures\Apps.cs" />
+    <Compile Include="CallbackStructures\Friends.cs" />
+    <Compile Include="CallbackStructures\GameServer.cs" />
+    <Compile Include="CallbackStructures\GameServerStats.cs" />
+    <Compile Include="CallbackStructures\HTTP.cs" />
+    <Compile Include="CallbackStructures\Matchmaking.cs" />
+    <Compile Include="CallbackStructures\Networking.cs" />
+    <Compile Include="CallbackStructures\RemoteStorage.cs" />
+    <Compile Include="CallbackStructures\Screenshots.cs" />
+    <Compile Include="CallbackStructures\Stats.cs" />
+    <Compile Include="CallbackStructures\UGC.cs" />
+    <Compile Include="CallbackStructures\User.cs" />
+    <Compile Include="CallbackStructures\Utils.cs" />
+    <Compile Include="Cloud.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Exceptions\AlreadyLoadedException.cs" />
+    <Compile Include="Exceptions\CallbackStructSizeMismatchException.cs" />
+    <Compile Include="Exceptions\InvalidInterfaceVersionException.cs" />
+    <Compile Include="Exceptions\NotAvailableInLiteException.cs" />
+    <Compile Include="Exceptions\SteamInitializeFailedException.cs" />
+    <Compile Include="Exceptions\SteamInterfaceInitializeFailedException.cs" />
+    <Compile Include="Exceptions\UsageAfterAPIShutdownException.cs" />
+    <Compile Include="Friends.cs" />
+    <Compile Include="GameServer.cs" />
+    <Compile Include="GameServerStats.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Hmd.cs" />
+    <Compile Include="HTTP.cs" />
+    <Compile Include="Implementations\Apps.cs" />
+    <Compile Include="Implementations\Friends.cs" />
+    <Compile Include="Implementations\GameServer.cs" />
+    <Compile Include="Implementations\GameServerStats.cs" />
+    <Compile Include="Implementations\Hmd.cs" />
+    <Compile Include="Implementations\HTTP.cs" />
+    <Compile Include="Implementations\MatchMaking.cs" />
+    <Compile Include="Implementations\Networking.cs" />
+    <Compile Include="Implementations\Screenshots.cs" />
+    <Compile Include="Implementations\Stats.cs" />
+    <Compile Include="Implementations\MatchmakingServers.cs" />
+    <Compile Include="Implementations\SteamController.cs" />
+    <Compile Include="Implementations\SteamServiceGameServer.cs" />
+    <Compile Include="Implementations\UGC.cs" />
+    <Compile Include="Implementations\User.cs" />
+    <Compile Include="Implementations\Utils.cs" />
+    <Compile Include="Exceptions\ManagedException.cs" />
+    <Compile Include="Exceptions\NativeException.cs" />
+    <Compile Include="Exceptions\UnexpectedException.cs" />
+    <Compile Include="Internal\Error.cs" />
+    <Compile Include="Internal\NativeHelpers.cs" />
+    <Compile Include="Internal\StringID.cs" />
+    <Compile Include="Internal\StringMap.cs" />
+    <Compile Include="MatchMaking.cs" />
+    <Compile Include="MatchmakingPingResponse.cs" />
+    <Compile Include="MatchmakingPlayersResponse.cs" />
+    <Compile Include="MatchMakingRulesResponse.cs" />
+    <Compile Include="MatchmakingServerListResponse.cs" />
+    <Compile Include="Networking.cs" />
+    <Compile Include="Screenshots.cs" />
+    <Compile Include="ServicesGameServer.cs" />
+    <Compile Include="SharedEnums\CallbackID.cs" />
+    <Compile Include="MatchmakingServers.cs" />
+    <Compile Include="SteamController.cs" />
+    <Compile Include="SteamEncryptedAppTicket.cs" />
+    <Compile Include="SteamTypes\AccountID.cs" />
+    <Compile Include="SteamTypes\AuthSessionResponse.cs" />
+    <Compile Include="SteamTypes\AuthTicketHandle.cs" />
+    <Compile Include="SteamTypes\BeginAuthSessionResult.cs" />
+    <Compile Include="SteamTypes\ChatEntryType.cs" />
+    <Compile Include="SteamTypes\ChatMemberStateChange.cs" />
+    <Compile Include="SteamTypes\ChatRoomEnterResponse.cs" />
+    <Compile Include="SteamTypes\CheckFileSignature.cs" />
+    <Compile Include="SteamTypes\DenyReason.cs" />
+    <Compile Include="SteamTypes\DepotID.cs" />
+    <Compile Include="SteamTypes\DistortionCoordinates.cs" />
+    <Compile Include="SteamTypes\GamepadTextInputLineMode.cs" />
+    <Compile Include="SteamTypes\GamepadTextInputMode.cs" />
+    <Compile Include="SteamTypes\GameServerItem.cs" />
+    <Compile Include="SteamTypes\GraphicsAPIConvention.cs" />
+    <Compile Include="SteamTypes\HmdError.cs" />
+    <Compile Include="SteamTypes\HmdEye.cs" />
+    <Compile Include="SteamTypes\HmdMatrix34.cs" />
+    <Compile Include="SteamTypes\HmdMatrix44.cs" />
+    <Compile Include="SteamTypes\HmdTrackingResult.cs" />
+    <Compile Include="SteamTypes\HTTPMethod.cs" />
+    <Compile Include="SteamTypes\HTTPRequestHandle.cs" />
+    <Compile Include="SteamTypes\HTTPStatusCode.cs" />
+    <Compile Include="SteamTypes\LobbyComparison.cs" />
+    <Compile Include="SteamTypes\LobbyDistanceFilter.cs" />
+    <Compile Include="SteamTypes\LobbyType.cs" />
+    <Compile Include="SharedEnums\ErrorCodes.cs" />
+    <Compile Include="SharedEnums\OverlayDialog.cs" />
+    <Compile Include="SharedEnums\OverlayDialogToUser.cs" />
+    <Compile Include="SteamTypes\AchievementIcon.cs" />
+    <Compile Include="SteamTypes\AppID.cs" />
+    <Compile Include="SteamTypes\FriendFlags.cs" />
+    <Compile Include="SteamTypes\FriendGameInfo.cs" />
+    <Compile Include="SteamTypes\FriendRelationship.cs" />
+    <Compile Include="SteamTypes\GameID.cs" />
+    <Compile Include="SteamTypes\IconHandle.cs" />
+    <Compile Include="SteamTypes\ImageHandle.cs" />
+    <Compile Include="SteamTypes\LeaderboardDataRequest.cs" />
+    <Compile Include="SteamTypes\LeaderboardDisplayType.cs" />
+    <Compile Include="SteamTypes\LeaderboardEntriesHandle.cs" />
+    <Compile Include="SteamTypes\LeaderboardEntry.cs" />
+    <Compile Include="SteamTypes\LeaderboardSortMethod.cs" />
+    <Compile Include="SharedEnums\LoadStatus.cs" />
+    <Compile Include="SharedEnums\ResultID.cs" />
+    <Compile Include="SteamTypes\LeaderboardUploadScoreMethod.cs" />
+    <Compile Include="SteamTypes\MatchMakingKeyValuePair.cs" />
+    <Compile Include="SteamTypes\MatchMakingServerResponse.cs" />
+    <Compile Include="SteamTypes\NetListenSocketHandle.cs" />
+    <Compile Include="SteamTypes\NetSocketConnectionType.cs" />
+    <Compile Include="SteamTypes\NetSocketHandle.cs" />
+    <Compile Include="SteamTypes\NotificationPosition.cs" />
+    <Compile Include="SteamTypes\OverlayToStoreFlag.cs" />
+    <Compile Include="SteamTypes\P2PSend.cs" />
+    <Compile Include="SteamTypes\P2PSessionError.cs" />
+    <Compile Include="SteamTypes\P2PSessionState.cs" />
+    <Compile Include="SteamTypes\PersonaChange.cs" />
+    <Compile Include="SteamTypes\PersonaState.cs" />
+    <Compile Include="SteamTypes\PublishedFileId.cs" />
+    <Compile Include="SteamTypes\PublishedFileUpdateHandle.cs" />
+    <Compile Include="SteamTypes\RegisterActivationCodeResult.cs" />
+    <Compile Include="SteamTypes\RemoteStoragePlatform.cs" />
+    <Compile Include="SteamTypes\RemoteStoragePublishedFileVisibility.cs" />
+    <Compile Include="SteamTypes\ResolveConflict.cs" />
+    <Compile Include="SteamTypes\Result.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="Implementations\SteamService.cs" />
+    <Compile Include="SteamTypes\LeaderboardHandle.cs" />
+    <Compile Include="SteamTypes\ScreenshotHandle.cs" />
+    <Compile Include="SteamTypes\ServerListRequestHandle.cs" />
+    <Compile Include="SteamTypes\ServerMode.cs" />
+    <Compile Include="SteamTypes\ServerNetworkAddress.cs" />
+    <Compile Include="SteamTypes\ServerQueryHandle.cs" />
+    <Compile Include="SteamTypes\SNetSocketState.cs" />
+    <Compile Include="SteamTypes\SteamAPICall.cs" />
+    <Compile Include="SteamTypes\SteamAPICallFailure.cs" />
+    <Compile Include="SteamTypes\SteamControllerButtons.cs" />
+    <Compile Include="SteamTypes\SteamControllerPad.cs" />
+    <Compile Include="SteamTypes\SteamControllerState.cs" />
+    <Compile Include="SteamTypes\SteamID.cs" />
+    <Compile Include="SteamTypes\SteamParamStringArray.cs" />
+    <Compile Include="SteamTypes\UGCDetails.cs" />
+    <Compile Include="SteamTypes\UGCMatchingUGCType.cs" />
+    <Compile Include="SteamTypes\UGCQuery.cs" />
+    <Compile Include="SteamTypes\UGCQueryHandle.cs" />
+    <Compile Include="SteamTypes\UGCReadAction.cs" />
+    <Compile Include="SteamTypes\Universe.cs" />
+    <Compile Include="SteamTypes\UserHasLicenseForAppResult.cs" />
+    <Compile Include="SteamTypes\UserRestriction.cs" />
+    <Compile Include="SteamTypes\UserUGCList.cs" />
+    <Compile Include="SteamTypes\UserUGCListSortOrder.cs" />
+    <Compile Include="SteamTypes\VoiceResult.cs" />
+    <Compile Include="SteamTypes\WorkshopEnumerationType.cs" />
+    <Compile Include="SteamTypes\WorkshopFileAction.cs" />
+    <Compile Include="SteamTypes\WorkshopFileType.cs" />
+    <Compile Include="SteamTypes\WorkshopVideoProviders.cs" />
+    <Compile Include="SteamTypes\WorkshopVote.cs" />
+    <Compile Include="UGC.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="SteamTypes\UGCHandle.cs" />
+    <Compile Include="Utility\DelegateJob.cs" />
+    <Compile Include="Utility\DisposableClass.cs" />
+    <Compile Include="Utility\IJob.cs" />
+    <Compile Include="Utility\JobManager.cs" />
+    <Compile Include="Utility\NativeBuffer.cs" />
+    <Compile Include="Utility\NativeString.cs" />
+    <Compile Include="Utility\StringHelper.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Generated\InteropMain.cs" />
+    <Compile Include="Implementations\Cloud.cs" />
+    <Compile Include="Steam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Documents\BuildProcess.txt">
+      <Link>Documents\BuildProcess.txt</Link>
+    </Content>
+    <CodeAnalysisDictionary Include="CustomDictionary.xml" />
+    <Content Include="Generated\InteropMain.PreProcessor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if ["$(ConfigurationName)"]==["Release Lite"] goto LiteMode
+if ["$(ConfigurationName)"]==["Debug Lite"] goto LiteMode
+goto NormalMode
+
+:NormalMode
+copy "$(TargetPath)" "$(SolutionDir)UnityProjects\Normal\Assets\Plugins\Steamworks\$(TargetFileName)"
+copy "$(TargetPath)" "$(SolutionDir)UnityProjects\NormalTest\Assets\Plugins\Steamworks\$(TargetFileName)"
+goto End
+
+:LiteMode
+copy "$(TargetPath)" "$(SolutionDir)UnityProjects\Lite\Assets\Plugins\Steamworks\$(TargetFileName)"
+copy "$(TargetPath)" "$(SolutionDir)UnityProjects\LiteTest\Assets\Plugins\Steamworks\$(TargetFileName)"
+goto End
+
+:End</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

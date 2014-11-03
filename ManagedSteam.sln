@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedSteam", "ManagedSteam\ManagedSteam.csproj", "{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24EB2422-C6DF-4428-B034-A88DC460D178} = {24EB2422-C6DF-4428-B034-A88DC460D178}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SteamworksNative", "SteamAPIWrap\SteamWrap.vcxproj", "{24EB2422-C6DF-4428-B034-A88DC460D178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNA", "XNA\XNA\XNA.csproj", "{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNAContent", "XNA\XNAContent\XNAContent.contentproj", "{E5788A03-1BBB-456B-90A7-E22343D417EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96DBBC1A-2A0D-4269-88A7-2B3F2B8FAF4A}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ManagedSteam.vsmdi = ManagedSteam.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ManagedSteam.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Lite|32-bit = Debug Lite|32-bit
+		Debug Lite|64-bit = Debug Lite|64-bit
+		Debug|32-bit = Debug|32-bit
+		Debug|64-bit = Debug|64-bit
+		Release Lite|32-bit = Release Lite|32-bit
+		Release Lite|64-bit = Release Lite|64-bit
+		Release|32-bit = Release|32-bit
+		Release|64-bit = Release|64-bit
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug Lite|32-bit.ActiveCfg = Debug Lite|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug Lite|32-bit.Build.0 = Debug Lite|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug Lite|64-bit.ActiveCfg = Debug Lite|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug Lite|64-bit.Build.0 = Debug Lite|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug|32-bit.ActiveCfg = Debug|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug|32-bit.Build.0 = Debug|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug|64-bit.ActiveCfg = Debug|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Debug|64-bit.Build.0 = Debug|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release Lite|32-bit.ActiveCfg = Release Lite|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release Lite|32-bit.Build.0 = Release Lite|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release Lite|64-bit.ActiveCfg = Release Lite|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release Lite|64-bit.Build.0 = Release Lite|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release|32-bit.ActiveCfg = Release|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release|32-bit.Build.0 = Release|Any CPU
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release|64-bit.ActiveCfg = Release|x64
+		{F2656F36-7BC9-4ED7-9DEA-A2467ADFBEC1}.Release|64-bit.Build.0 = Release|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug Lite|32-bit.ActiveCfg = Debug Lite|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug Lite|32-bit.Build.0 = Debug Lite|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug Lite|64-bit.ActiveCfg = Debug Lite|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug Lite|64-bit.Build.0 = Debug Lite|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug|32-bit.ActiveCfg = Debug|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug|32-bit.Build.0 = Debug|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug|64-bit.ActiveCfg = Debug|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Debug|64-bit.Build.0 = Debug|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release Lite|32-bit.ActiveCfg = Release Lite|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release Lite|32-bit.Build.0 = Release Lite|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release Lite|64-bit.ActiveCfg = Release Lite|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release Lite|64-bit.Build.0 = Release Lite|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release|32-bit.ActiveCfg = Release|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release|32-bit.Build.0 = Release|Win32
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release|64-bit.ActiveCfg = Release|x64
+		{24EB2422-C6DF-4428-B034-A88DC460D178}.Release|64-bit.Build.0 = Release|x64
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug Lite|32-bit.ActiveCfg = Debug Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug Lite|32-bit.Build.0 = Debug Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug Lite|64-bit.ActiveCfg = Debug Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug|32-bit.ActiveCfg = Debug|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug|32-bit.Build.0 = Debug|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug|64-bit.ActiveCfg = Debug|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Debug|64-bit.Build.0 = Debug|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release Lite|32-bit.ActiveCfg = Release Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release Lite|32-bit.Build.0 = Release Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release Lite|64-bit.ActiveCfg = Release Lite|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release|32-bit.ActiveCfg = Release|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release|32-bit.Build.0 = Release|x86
+		{DECDF07E-7E6A-4C7E-B1BB-9241E62BF8CB}.Release|64-bit.ActiveCfg = Release|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Debug Lite|32-bit.ActiveCfg = Debug|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Debug Lite|64-bit.ActiveCfg = Debug|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Debug|32-bit.ActiveCfg = Debug|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Debug|64-bit.ActiveCfg = Debug|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Release Lite|32-bit.ActiveCfg = Release|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Release Lite|64-bit.ActiveCfg = Release|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Release|32-bit.ActiveCfg = Release|x86
+		{E5788A03-1BBB-456B-90A7-E22343D417EE}.Release|64-bit.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

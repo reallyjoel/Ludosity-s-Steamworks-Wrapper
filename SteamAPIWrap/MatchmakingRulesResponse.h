@@ -1,0 +1,12 @@
+#ifndef MatchmakingRulesPlayers_h_interop_
+#define MatchmakingRulesPlayers_h_interop_
+
+ManagedSteam_API_Lite uptr MatchmakingRulesResponse_CreateObject();
+
+ManagedSteam_API_Lite void MatchmakingRulesResponse_DestroyObject(uptr obj);
+
+ManagedSteam_API_Lite void MatchmakingRulesResponse_RegisterCallbacks(MatchmakingRulesResponse_RulesResponded rulesResponded, MatchmakingRulesResponse_RulesFailedToRespond rulesFailedToRespond, MatchmakingRulesResponse_RulesRefreshComplete rulesRefreshComplete);
+
+ManagedSteam_API_Lite void MatchmakingRulesResponse_RemoveCallbacks();
+
+#endif // MatchmakingServerListResponse_h_interop_

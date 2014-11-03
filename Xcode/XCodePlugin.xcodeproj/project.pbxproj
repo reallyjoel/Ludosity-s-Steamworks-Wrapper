@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B73C866115E277070093D4AF /* GameServerStats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B73C865515E277070093D4AF /* GameServerStats.cpp */; };
+		B73C866215E277070093D4AF /* MatchMakingServers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B73C865815E277070093D4AF /* MatchMakingServers.cpp */; };
+		B73C866315E277070093D4AF /* Networking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B73C865B15E277070093D4AF /* Networking.cpp */; };
+		B73C866415E277070093D4AF /* ServicesGameServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B73C865E15E277070093D4AF /* ServicesGameServer.cpp */; };
+		B786BD0014EBE46500C2F8E1 /* Friends.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B786BCFC14EBE46500C2F8E1 /* Friends.cpp */; };
+		B78F9D411458287B00B2BA06 /* Cloud.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D3A1458287B00B2BA06 /* Cloud.cpp */; };
+		B78F9D421458287B00B2BA06 /* Helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D3F1458287B00B2BA06 /* Helper.cpp */; };
+		B78F9D51145829E900B2BA06 /* Services.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D49145829E900B2BA06 /* Services.cpp */; };
+		B78F9D52145829E900B2BA06 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D4C145829E900B2BA06 /* Singleton.cpp */; };
+		B78F9D53145829E900B2BA06 /* Stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D4E145829E900B2BA06 /* Stats.cpp */; };
+		B78F9D5A145829F600B2BA06 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D55145829F600B2BA06 /* User.cpp */; };
+		B78F9D5B145829F600B2BA06 /* VersionInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F9D58145829F600B2BA06 /* VersionInfo.cpp */; };
+		B78F9D9414582EB200B2BA06 /* libsteam_api.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B78F9D9314582EB200B2BA06 /* libsteam_api.dylib */; };
+		B7B8576015EE693B0012E738 /* MatchmakingPingResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7B8575415EE693B0012E738 /* MatchmakingPingResponse.cpp */; };
+		B7B8576115EE693B0012E738 /* MatchmakingPlayersResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7B8575715EE693B0012E738 /* MatchmakingPlayersResponse.cpp */; };
+		B7B8576215EE693B0012E738 /* MatchmakingRulesResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7B8575A15EE693B0012E738 /* MatchmakingRulesResponse.cpp */; };
+		B7B8576315EE693B0012E738 /* MatchmakingServerListResponse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7B8575D15EE693B0012E738 /* MatchmakingServerListResponse.cpp */; };
+		B7EA113315D1582C006350B5 /* GameServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA112A15D1582C006350B5 /* GameServer.cpp */; };
+		B7EA113415D1582C006350B5 /* MatchMaking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA112D15D1582C006350B5 /* MatchMaking.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		6A3F7F7E10AC146D00948A73 /* SteamAPIWrap.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteamAPIWrap.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3F7F7F10AC146D00948A73 /* SteamAPIWrap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SteamAPIWrap-Info.plist"; sourceTree = "<group>"; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B73C865315E277070093D4AF /* GameServerCallbackID.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameServerCallbackID.hpp; path = ../SteamAPIWrap/GameServerCallbackID.hpp; sourceTree = "<group>"; };
+		B73C865415E277070093D4AF /* GameServerResultID.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameServerResultID.hpp; path = ../SteamAPIWrap/GameServerResultID.hpp; sourceTree = "<group>"; };
+		B73C865515E277070093D4AF /* GameServerStats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameServerStats.cpp; path = ../SteamAPIWrap/GameServerStats.cpp; sourceTree = "<group>"; };
+		B73C865615E277070093D4AF /* GameServerStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameServerStats.h; path = ../SteamAPIWrap/GameServerStats.h; sourceTree = "<group>"; };
+		B73C865715E277070093D4AF /* GameServerStats.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameServerStats.hpp; path = ../SteamAPIWrap/GameServerStats.hpp; sourceTree = "<group>"; };
+		B73C865815E277070093D4AF /* MatchMakingServers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchMakingServers.cpp; path = ../SteamAPIWrap/MatchMakingServers.cpp; sourceTree = "<group>"; };
+		B73C865915E277070093D4AF /* MatchMakingServers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchMakingServers.h; path = ../SteamAPIWrap/MatchMakingServers.h; sourceTree = "<group>"; };
+		B73C865A15E277070093D4AF /* MatchMakingServers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchMakingServers.hpp; path = ../SteamAPIWrap/MatchMakingServers.hpp; sourceTree = "<group>"; };
+		B73C865B15E277070093D4AF /* Networking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Networking.cpp; path = ../SteamAPIWrap/Networking.cpp; sourceTree = "<group>"; };
+		B73C865C15E277070093D4AF /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Networking.h; path = ../SteamAPIWrap/Networking.h; sourceTree = "<group>"; };
+		B73C865D15E277070093D4AF /* Networking.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Networking.hpp; path = ../SteamAPIWrap/Networking.hpp; sourceTree = "<group>"; };
+		B73C865E15E277070093D4AF /* ServicesGameServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ServicesGameServer.cpp; path = ../SteamAPIWrap/ServicesGameServer.cpp; sourceTree = "<group>"; };
+		B73C865F15E277070093D4AF /* ServicesGameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServicesGameServer.h; path = ../SteamAPIWrap/ServicesGameServer.h; sourceTree = "<group>"; };
+		B73C866015E277070093D4AF /* ServicesGameServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ServicesGameServer.hpp; path = ../SteamAPIWrap/ServicesGameServer.hpp; sourceTree = "<group>"; };
+		B786BCFC14EBE46500C2F8E1 /* Friends.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Friends.cpp; path = ../SteamAPIWrap/Friends.cpp; sourceTree = "<group>"; };
+		B786BCFD14EBE46500C2F8E1 /* Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friends.h; path = ../SteamAPIWrap/Friends.h; sourceTree = "<group>"; };
+		B786BCFE14EBE46500C2F8E1 /* Friends.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Friends.hpp; path = ../SteamAPIWrap/Friends.hpp; sourceTree = "<group>"; };
+		B786BCFF14EBE46500C2F8E1 /* OverlayDialog.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OverlayDialog.hpp; path = ../SteamAPIWrap/OverlayDialog.hpp; sourceTree = "<group>"; };
+		B78F9D391458287B00B2BA06 /* CallbackID.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CallbackID.hpp; path = ../SteamAPIWrap/CallbackID.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D3A1458287B00B2BA06 /* Cloud.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cloud.cpp; path = ../SteamAPIWrap/Cloud.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D3B1458287B00B2BA06 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cloud.h; path = ../SteamAPIWrap/Cloud.h; sourceTree = SOURCE_ROOT; };
+		B78F9D3C1458287B00B2BA06 /* Cloud.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cloud.hpp; path = ../SteamAPIWrap/Cloud.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D3D1458287B00B2BA06 /* ConvertedStructures.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ConvertedStructures.hpp; path = ../SteamAPIWrap/ConvertedStructures.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D3E1458287B00B2BA06 /* ErrorCodes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ErrorCodes.hpp; path = ../SteamAPIWrap/ErrorCodes.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D3F1458287B00B2BA06 /* Helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Helper.cpp; path = ../SteamAPIWrap/Helper.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D401458287B00B2BA06 /* Helper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Helper.hpp; path = ../SteamAPIWrap/Helper.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D43145829DE00B2BA06 /* InteropMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InteropMain.h; path = ../SteamAPIWrap/InteropMain.h; sourceTree = SOURCE_ROOT; };
+		B78F9D44145829DE00B2BA06 /* LoadStatus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LoadStatus.hpp; path = ../SteamAPIWrap/LoadStatus.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D45145829DE00B2BA06 /* Macros.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Macros.hpp; path = ../SteamAPIWrap/Macros.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D46145829DE00B2BA06 /* ManagedCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ManagedCallback.h; path = ../SteamAPIWrap/ManagedCallback.h; sourceTree = SOURCE_ROOT; };
+		B78F9D47145829E900B2BA06 /* Precompiled.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Precompiled.hpp; path = ../SteamAPIWrap/Precompiled.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D48145829E900B2BA06 /* ResultID.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ResultID.hpp; path = ../SteamAPIWrap/ResultID.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D49145829E900B2BA06 /* Services.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Services.cpp; path = ../SteamAPIWrap/Services.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D4A145829E900B2BA06 /* Services.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Services.h; path = ../SteamAPIWrap/Services.h; sourceTree = SOURCE_ROOT; };
+		B78F9D4B145829E900B2BA06 /* Services.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Services.hpp; path = ../SteamAPIWrap/Services.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D4C145829E900B2BA06 /* Singleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Singleton.cpp; path = ../SteamAPIWrap/Singleton.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D4D145829E900B2BA06 /* Singleton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Singleton.hpp; path = ../SteamAPIWrap/Singleton.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D4E145829E900B2BA06 /* Stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Stats.cpp; path = ../SteamAPIWrap/Stats.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D4F145829E900B2BA06 /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stats.h; path = ../SteamAPIWrap/Stats.h; sourceTree = SOURCE_ROOT; };
+		B78F9D50145829E900B2BA06 /* Stats.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Stats.hpp; path = ../SteamAPIWrap/Stats.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D54145829F600B2BA06 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = ../SteamAPIWrap/Types.h; sourceTree = SOURCE_ROOT; };
+		B78F9D55145829F600B2BA06 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = User.cpp; path = ../SteamAPIWrap/User.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D56145829F600B2BA06 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../SteamAPIWrap/User.h; sourceTree = SOURCE_ROOT; };
+		B78F9D57145829F600B2BA06 /* User.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = User.hpp; path = ../SteamAPIWrap/User.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D58145829F600B2BA06 /* VersionInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VersionInfo.cpp; path = ../SteamAPIWrap/VersionInfo.cpp; sourceTree = SOURCE_ROOT; };
+		B78F9D59145829F600B2BA06 /* VersionInfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VersionInfo.hpp; path = ../SteamAPIWrap/VersionInfo.hpp; sourceTree = SOURCE_ROOT; };
+		B78F9D6014582A1C00B2BA06 /* isteamapps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamapps.h; path = ../SteamworksSDK/public/steam/isteamapps.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6114582A1C00B2BA06 /* isteamappticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamappticket.h; path = ../SteamworksSDK/public/steam/isteamappticket.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6214582A1C00B2BA06 /* isteamclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamclient.h; path = ../SteamworksSDK/public/steam/isteamclient.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6314582A1C00B2BA06 /* isteamfriends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamfriends.h; path = ../SteamworksSDK/public/steam/isteamfriends.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6414582A1C00B2BA06 /* isteamgamecoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamgamecoordinator.h; path = ../SteamworksSDK/public/steam/isteamgamecoordinator.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6514582A1C00B2BA06 /* isteamgameserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamgameserver.h; path = ../SteamworksSDK/public/steam/isteamgameserver.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6614582A1C00B2BA06 /* isteamgameserverstats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamgameserverstats.h; path = ../SteamworksSDK/public/steam/isteamgameserverstats.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6714582A1C00B2BA06 /* isteamgamestats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamgamestats.h; path = ../SteamworksSDK/public/steam/isteamgamestats.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6814582A1C00B2BA06 /* isteamhttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamhttp.h; path = ../SteamworksSDK/public/steam/isteamhttp.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6914582A1C00B2BA06 /* isteammasterserverupdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteammasterserverupdater.h; path = ../SteamworksSDK/public/steam/isteammasterserverupdater.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6A14582A1C00B2BA06 /* isteammatchmaking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteammatchmaking.h; path = ../SteamworksSDK/public/steam/isteammatchmaking.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6B14582A1C00B2BA06 /* isteamnetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamnetworking.h; path = ../SteamworksSDK/public/steam/isteamnetworking.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6C14582A1C00B2BA06 /* isteamps3overlayrenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamps3overlayrenderer.h; path = ../SteamworksSDK/public/steam/isteamps3overlayrenderer.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6D14582A1C00B2BA06 /* isteamremotestorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamremotestorage.h; path = ../SteamworksSDK/public/steam/isteamremotestorage.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6E14582A1C00B2BA06 /* isteamscreenshots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamscreenshots.h; path = ../SteamworksSDK/public/steam/isteamscreenshots.h; sourceTree = SOURCE_ROOT; };
+		B78F9D6F14582A1C00B2BA06 /* isteamuser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamuser.h; path = ../SteamworksSDK/public/steam/isteamuser.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7014582A1C00B2BA06 /* isteamuserstats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamuserstats.h; path = ../SteamworksSDK/public/steam/isteamuserstats.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7114582A1C00B2BA06 /* isteamutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = isteamutils.h; path = ../SteamworksSDK/public/steam/isteamutils.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7214582A1C00B2BA06 /* matchmakingtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = matchmakingtypes.h; path = ../SteamworksSDK/public/steam/matchmakingtypes.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7314582A1C00B2BA06 /* steam_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steam_api.h; path = ../SteamworksSDK/public/steam/steam_api.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7414582A1C00B2BA06 /* steam_gameserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steam_gameserver.h; path = ../SteamworksSDK/public/steam/steam_gameserver.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7514582A1C00B2BA06 /* steamclientpublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steamclientpublic.h; path = ../SteamworksSDK/public/steam/steamclientpublic.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7614582A1C00B2BA06 /* steamencryptedappticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steamencryptedappticket.h; path = ../SteamworksSDK/public/steam/steamencryptedappticket.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7714582A1C00B2BA06 /* steamhttpenums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steamhttpenums.h; path = ../SteamworksSDK/public/steam/steamhttpenums.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7814582A1C00B2BA06 /* steamps3params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steamps3params.h; path = ../SteamworksSDK/public/steam/steamps3params.h; sourceTree = SOURCE_ROOT; };
+		B78F9D7914582A1C00B2BA06 /* steamtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = steamtypes.h; path = ../SteamworksSDK/public/steam/steamtypes.h; sourceTree = SOURCE_ROOT; };
+		B78F9D9314582EB200B2BA06 /* libsteam_api.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsteam_api.dylib; path = ../SteamworksSDK/redistributable_bin/osx32/libsteam_api.dylib; sourceTree = SOURCE_ROOT; };
+		B7B8575415EE693B0012E738 /* MatchmakingPingResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchmakingPingResponse.cpp; path = ../SteamAPIWrap/MatchmakingPingResponse.cpp; sourceTree = "<group>"; };
+		B7B8575515EE693B0012E738 /* MatchmakingPingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchmakingPingResponse.h; path = ../SteamAPIWrap/MatchmakingPingResponse.h; sourceTree = "<group>"; };
+		B7B8575615EE693B0012E738 /* MatchmakingPingResponse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchmakingPingResponse.hpp; path = ../SteamAPIWrap/MatchmakingPingResponse.hpp; sourceTree = "<group>"; };
+		B7B8575715EE693B0012E738 /* MatchmakingPlayersResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchmakingPlayersResponse.cpp; path = ../SteamAPIWrap/MatchmakingPlayersResponse.cpp; sourceTree = "<group>"; };
+		B7B8575815EE693B0012E738 /* MatchmakingPlayersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchmakingPlayersResponse.h; path = ../SteamAPIWrap/MatchmakingPlayersResponse.h; sourceTree = "<group>"; };
+		B7B8575915EE693B0012E738 /* MatchmakingPlayersResponse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchmakingPlayersResponse.hpp; path = ../SteamAPIWrap/MatchmakingPlayersResponse.hpp; sourceTree = "<group>"; };
+		B7B8575A15EE693B0012E738 /* MatchmakingRulesResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchmakingRulesResponse.cpp; path = ../SteamAPIWrap/MatchmakingRulesResponse.cpp; sourceTree = "<group>"; };
+		B7B8575B15EE693B0012E738 /* MatchmakingRulesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchmakingRulesResponse.h; path = ../SteamAPIWrap/MatchmakingRulesResponse.h; sourceTree = "<group>"; };
+		B7B8575C15EE693B0012E738 /* MatchMakingRulesResponse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchMakingRulesResponse.hpp; path = ../SteamAPIWrap/MatchMakingRulesResponse.hpp; sourceTree = "<group>"; };
+		B7B8575D15EE693B0012E738 /* MatchmakingServerListResponse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchmakingServerListResponse.cpp; path = ../SteamAPIWrap/MatchmakingServerListResponse.cpp; sourceTree = "<group>"; };
+		B7B8575E15EE693B0012E738 /* MatchmakingServerListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchmakingServerListResponse.h; path = ../SteamAPIWrap/MatchmakingServerListResponse.h; sourceTree = "<group>"; };
+		B7B8575F15EE693B0012E738 /* MatchmakingServerListResponse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchmakingServerListResponse.hpp; path = ../SteamAPIWrap/MatchmakingServerListResponse.hpp; sourceTree = "<group>"; };
+		B7EA112A15D1582C006350B5 /* GameServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameServer.cpp; path = ../SteamAPIWrap/GameServer.cpp; sourceTree = "<group>"; };
+		B7EA112B15D1582C006350B5 /* GameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameServer.h; path = ../SteamAPIWrap/GameServer.h; sourceTree = "<group>"; };
+		B7EA112C15D1582C006350B5 /* GameServer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameServer.hpp; path = ../SteamAPIWrap/GameServer.hpp; sourceTree = "<group>"; };
+		B7EA112D15D1582C006350B5 /* MatchMaking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MatchMaking.cpp; path = ../SteamAPIWrap/MatchMaking.cpp; sourceTree = "<group>"; };
+		B7EA112E15D1582C006350B5 /* MatchMaking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatchMaking.h; path = ../SteamAPIWrap/MatchMaking.h; sourceTree = "<group>"; };
+		B7EA112F15D1582C006350B5 /* MatchMaking.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = MatchMaking.hpp; path = ../SteamAPIWrap/MatchMaking.hpp; sourceTree = "<group>"; };
+		B7EA113015D1582C006350B5 /* MemoryHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryHelpers.h; path = ../SteamAPIWrap/MemoryHelpers.h; sourceTree = "<group>"; };
+		B7EA113115D1582C006350B5 /* OverlayDialogToUser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OverlayDialogToUser.hpp; path = ../SteamAPIWrap/OverlayDialogToUser.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A3F7F7C10AC146D00948A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78F9D9414582EB200B2BA06 /* libsteam_api.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* XCodePlugin */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+				6A3F7F7F10AC146D00948A73 /* SteamAPIWrap-Info.plist */,
+			);
+			name = XCodePlugin;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B78F9D9314582EB200B2BA06 /* libsteam_api.dylib */,
+				B78F9D6014582A1C00B2BA06 /* isteamapps.h */,
+				B78F9D6114582A1C00B2BA06 /* isteamappticket.h */,
+				B78F9D6214582A1C00B2BA06 /* isteamclient.h */,
+				B78F9D6314582A1C00B2BA06 /* isteamfriends.h */,
+				B78F9D6414582A1C00B2BA06 /* isteamgamecoordinator.h */,
+				B78F9D6514582A1C00B2BA06 /* isteamgameserver.h */,
+				B78F9D6614582A1C00B2BA06 /* isteamgameserverstats.h */,
+				B78F9D6714582A1C00B2BA06 /* isteamgamestats.h */,
+				B78F9D6814582A1C00B2BA06 /* isteamhttp.h */,
+				B78F9D6914582A1C00B2BA06 /* isteammasterserverupdater.h */,
+				B78F9D6A14582A1C00B2BA06 /* isteammatchmaking.h */,
+				B78F9D6B14582A1C00B2BA06 /* isteamnetworking.h */,
+				B78F9D6C14582A1C00B2BA06 /* isteamps3overlayrenderer.h */,
+				B78F9D6D14582A1C00B2BA06 /* isteamremotestorage.h */,
+				B78F9D6E14582A1C00B2BA06 /* isteamscreenshots.h */,
+				B78F9D6F14582A1C00B2BA06 /* isteamuser.h */,
+				B78F9D7014582A1C00B2BA06 /* isteamuserstats.h */,
+				B78F9D7114582A1C00B2BA06 /* isteamutils.h */,
+				B78F9D7214582A1C00B2BA06 /* matchmakingtypes.h */,
+				B78F9D7314582A1C00B2BA06 /* steam_api.h */,
+				B78F9D7414582A1C00B2BA06 /* steam_gameserver.h */,
+				B78F9D7514582A1C00B2BA06 /* steamclientpublic.h */,
+				B78F9D7614582A1C00B2BA06 /* steamencryptedappticket.h */,
+				B78F9D7714582A1C00B2BA06 /* steamhttpenums.h */,
+				B78F9D7814582A1C00B2BA06 /* steamps3params.h */,
+				B78F9D7914582A1C00B2BA06 /* steamtypes.h */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8575415EE693B0012E738 /* MatchmakingPingResponse.cpp */,
+				B7B8575515EE693B0012E738 /* MatchmakingPingResponse.h */,
+				B7B8575615EE693B0012E738 /* MatchmakingPingResponse.hpp */,
+				B7B8575715EE693B0012E738 /* MatchmakingPlayersResponse.cpp */,
+				B7B8575815EE693B0012E738 /* MatchmakingPlayersResponse.h */,
+				B7B8575915EE693B0012E738 /* MatchmakingPlayersResponse.hpp */,
+				B7B8575A15EE693B0012E738 /* MatchmakingRulesResponse.cpp */,
+				B7B8575B15EE693B0012E738 /* MatchmakingRulesResponse.h */,
+				B7B8575C15EE693B0012E738 /* MatchMakingRulesResponse.hpp */,
+				B7B8575D15EE693B0012E738 /* MatchmakingServerListResponse.cpp */,
+				B7B8575E15EE693B0012E738 /* MatchmakingServerListResponse.h */,
+				B7B8575F15EE693B0012E738 /* MatchmakingServerListResponse.hpp */,
+				B73C865315E277070093D4AF /* GameServerCallbackID.hpp */,
+				B73C865415E277070093D4AF /* GameServerResultID.hpp */,
+				B73C865515E277070093D4AF /* GameServerStats.cpp */,
+				B73C865615E277070093D4AF /* GameServerStats.h */,
+				B73C865715E277070093D4AF /* GameServerStats.hpp */,
+				B73C865815E277070093D4AF /* MatchMakingServers.cpp */,
+				B73C865915E277070093D4AF /* MatchMakingServers.h */,
+				B73C865A15E277070093D4AF /* MatchMakingServers.hpp */,
+				B73C865B15E277070093D4AF /* Networking.cpp */,
+				B73C865C15E277070093D4AF /* Networking.h */,
+				B73C865D15E277070093D4AF /* Networking.hpp */,
+				B73C865E15E277070093D4AF /* ServicesGameServer.cpp */,
+				B73C865F15E277070093D4AF /* ServicesGameServer.h */,
+				B73C866015E277070093D4AF /* ServicesGameServer.hpp */,
+				B7EA112A15D1582C006350B5 /* GameServer.cpp */,
+				B7EA112B15D1582C006350B5 /* GameServer.h */,
+				B7EA112C15D1582C006350B5 /* GameServer.hpp */,
+				B7EA112D15D1582C006350B5 /* MatchMaking.cpp */,
+				B7EA112E15D1582C006350B5 /* MatchMaking.h */,
+				B7EA112F15D1582C006350B5 /* MatchMaking.hpp */,
+				B7EA113015D1582C006350B5 /* MemoryHelpers.h */,
+				B7EA113115D1582C006350B5 /* OverlayDialogToUser.hpp */,
+				B786BCFC14EBE46500C2F8E1 /* Friends.cpp */,
+				B786BCFD14EBE46500C2F8E1 /* Friends.h */,
+				B786BCFE14EBE46500C2F8E1 /* Friends.hpp */,
+				B786BCFF14EBE46500C2F8E1 /* OverlayDialog.hpp */,
+				B78F9D54145829F600B2BA06 /* Types.h */,
+				B78F9D55145829F600B2BA06 /* User.cpp */,
+				B78F9D56145829F600B2BA06 /* User.h */,
+				B78F9D57145829F600B2BA06 /* User.hpp */,
+				B78F9D58145829F600B2BA06 /* VersionInfo.cpp */,
+				B78F9D59145829F600B2BA06 /* VersionInfo.hpp */,
+				B78F9D47145829E900B2BA06 /* Precompiled.hpp */,
+				B78F9D48145829E900B2BA06 /* ResultID.hpp */,
+				B78F9D49145829E900B2BA06 /* Services.cpp */,
+				B78F9D4A145829E900B2BA06 /* Services.h */,
+				B78F9D4B145829E900B2BA06 /* Services.hpp */,
+				B78F9D4C145829E900B2BA06 /* Singleton.cpp */,
+				B78F9D4D145829E900B2BA06 /* Singleton.hpp */,
+				B78F9D4E145829E900B2BA06 /* Stats.cpp */,
+				B78F9D4F145829E900B2BA06 /* Stats.h */,
+				B78F9D50145829E900B2BA06 /* Stats.hpp */,
+				B78F9D43145829DE00B2BA06 /* InteropMain.h */,
+				B78F9D44145829DE00B2BA06 /* LoadStatus.hpp */,
+				B78F9D45145829DE00B2BA06 /* Macros.hpp */,
+				B78F9D46145829DE00B2BA06 /* ManagedCallback.h */,
+				B78F9D391458287B00B2BA06 /* CallbackID.hpp */,
+				B78F9D3A1458287B00B2BA06 /* Cloud.cpp */,
+				B78F9D3B1458287B00B2BA06 /* Cloud.h */,
+				B78F9D3C1458287B00B2BA06 /* Cloud.hpp */,
+				B78F9D3D1458287B00B2BA06 /* ConvertedStructures.hpp */,
+				B78F9D3E1458287B00B2BA06 /* ErrorCodes.hpp */,
+				B78F9D3F1458287B00B2BA06 /* Helper.cpp */,
+				B78F9D401458287B00B2BA06 /* Helper.hpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A3F7F7E10AC146D00948A73 /* SteamAPIWrap.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A3F7F7D10AC146D00948A73 /* SteamAPIWrap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A3F7F8210AC146D00948A73 /* Build configuration list for PBXNativeTarget "SteamAPIWrap" */;
+			buildPhases = (
+				6A3F7F7A10AC146D00948A73 /* Resources */,
+				6A3F7F7B10AC146D00948A73 /* Sources */,
+				6A3F7F7C10AC146D00948A73 /* Frameworks */,
+				B78F9D9814582F7E00B2BA06 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamAPIWrap;
+			productName = ASimplePlugin;
+			productReference = 6A3F7F7E10AC146D00948A73 /* SteamAPIWrap.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Ludosity;
+			};
+			buildConfigurationList = 4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "XCodePlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* XCodePlugin */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A3F7F7D10AC146D00948A73 /* SteamAPIWrap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A3F7F7A10AC146D00948A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B78F9D9814582F7E00B2BA06 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ] ; then\n    unityPath=\"Normal\"\n    unityPathTest=\"NormalTest\"\nelse\n    unityPath=\"Lite\"\n    unityPathTest=\"LiteTest\"\nfi\n\ncp -R \"$TARGET_BUILD_DIR/SteamAPIWrap.bundle/\" \"../UnityProjects/$unityPath/Assets/Plugins/SteamworksNative.bundle\"\ncp -R \"$TARGET_BUILD_DIR/SteamAPIWrap.bundle/\" \"../UnityProjects/$unityPathTest/Assets/Plugins/SteamworksNative.bundle\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A3F7F7B10AC146D00948A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78F9D411458287B00B2BA06 /* Cloud.cpp in Sources */,
+				B78F9D421458287B00B2BA06 /* Helper.cpp in Sources */,
+				B78F9D51145829E900B2BA06 /* Services.cpp in Sources */,
+				B78F9D52145829E900B2BA06 /* Singleton.cpp in Sources */,
+				B78F9D53145829E900B2BA06 /* Stats.cpp in Sources */,
+				B78F9D5A145829F600B2BA06 /* User.cpp in Sources */,
+				B78F9D5B145829F600B2BA06 /* VersionInfo.cpp in Sources */,
+				B786BD0014EBE46500C2F8E1 /* Friends.cpp in Sources */,
+				B7EA113315D1582C006350B5 /* GameServer.cpp in Sources */,
+				B7EA113415D1582C006350B5 /* MatchMaking.cpp in Sources */,
+				B73C866115E277070093D4AF /* GameServerStats.cpp in Sources */,
+				B73C866215E277070093D4AF /* MatchMakingServers.cpp in Sources */,
+				B73C866315E277070093D4AF /* Networking.cpp in Sources */,
+				B73C866415E277070093D4AF /* ServicesGameServer.cpp in Sources */,
+				B7B8576015EE693B0012E738 /* MatchmakingPingResponse.cpp in Sources */,
+				B7B8576115EE693B0012E738 /* MatchmakingPlayersResponse.cpp in Sources */,
+				B7B8576215EE693B0012E738 /* MatchmakingRulesResponse.cpp in Sources */,
+				B7B8576315EE693B0012E738 /* MatchmakingServerListResponse.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FADC23908B4156C00ABE55E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC,
+					STEAMAPIWRAP_EXPORTS,
+					VERSION_SAFE_STEAM_API_INTERFACES,
+					CPLUSPLUS,
+					"CSHARP=0",
+					STEAMAPIWRAP_FULL,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Ludosity/Documents/ManagedSteam2011/ManagedSteam/SharedStructures,
+					/Users/Ludosity/Documents/ManagedSteam2011/ManagedSteam/SharedEnums,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = i386;
+			};
+			name = Release;
+		};
+		6A3F7F8110AC146D00948A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ManagedSteam/SharedStructures/**",
+					"$(SRCROOT)/../ManagedSteam/SharedEnums/**",
+				);
+				INFOPLIST_FILE = "SteamAPIWrap-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SteamworksSDK/redistributable_bin/osx32\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PRODUCT_NAME = SteamAPIWrap;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		B78F42B5145EB67500FE8A1E /* Release Lite */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MAC,
+					STEAMAPIWRAP_EXPORTS,
+					VERSION_SAFE_STEAM_API_INTERFACES,
+					CPLUSPLUS,
+					"CSHARP=0",
+					STEAMAPIWRAP_LITE,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/Ludosity/Documents/ManagedSteam2011/ManagedSteam/SharedStructures,
+					/Users/Ludosity/Documents/ManagedSteam2011/ManagedSteam/SharedEnums,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = i386;
+			};
+			name = "Release Lite";
+		};
+		B78F42B6145EB67500FE8A1E /* Release Lite */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../ManagedSteam/SharedStructures/**",
+					"$(SRCROOT)/../ManagedSteam/SharedEnums/**",
+				);
+				INFOPLIST_FILE = "SteamAPIWrap-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../SteamworksSDK/redistributable_bin/osx32\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PRODUCT_NAME = SteamAPIWrap;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = "Release Lite";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FADC23708B4156C00ABE55E /* Build configuration list for PBXProject "XCodePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FADC23908B4156C00ABE55E /* Release */,
+				B78F42B5145EB67500FE8A1E /* Release Lite */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A3F7F8210AC146D00948A73 /* Build configuration list for PBXNativeTarget "SteamAPIWrap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3F7F8110AC146D00948A73 /* Release */,
+				B78F42B6145EB67500FE8A1E /* Release Lite */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

@@ -1,0 +1,32 @@
+Steam type		Our type
+
+uint8			u8
+int8			s8
+int16			s16
+uint16			u16
+int32			s32
+uint32			u32
+int64			s64
+uint64			u64
+
+intp			sptr
+uintp			uptr
+
+Any enum type	Enum
+
+Strings are special, as Steam uses the same type for different encodings. But our library code needs to make a difference.
+char *		PString
+const char *	PConstantString or PConstantAnsiString
+const char * 	PConstantUtf8String	(e.g. when getting/settings persona name)
+
+void *		PDataPointer
+const void *	PConstantDataPointer
+
+
+CSteamID		SteamID (Have to use ConvertToUint64 method or custom constructor for conversion)
+
+UGCHandle_t				UGCHandle
+PublishedFileUpdateHandle_t		PublishedFileUpdateHandle
+PublishedFileId_t			PublishedFileId
+SteamLeaderboard_t			SteamLeaderboard
+SteamLeaderboardEntries_t		SteamLeaderboardEntries

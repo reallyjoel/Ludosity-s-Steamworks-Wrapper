@@ -1,0 +1,30 @@
+<Dictionary>
+  <Words>
+    <Unrecognized>
+      <Word></Word>
+    </Unrecognized>
+    <Recognized>
+      <Word>leaderboard</Word>
+      <Word>ugc</Word>
+      <Word>lite</Word>
+      <Word>microtransaction</Word>
+      <Word>unvoted</Word>
+      <Word>gameplay</Word>
+      <Word>facebook</Word>
+    </Recognized>
+    <Deprecated>
+      <Term PreferredAlternate=""></Term>
+    </Deprecated>
+    <Compound>
+      <Term CompoundAlternate=""></Term>
+    </Compound>
+    <DiscreteExceptions>
+      <Term></Term>
+    </DiscreteExceptions>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <Acronym>UGC</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

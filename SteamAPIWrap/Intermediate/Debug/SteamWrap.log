@@ -1,0 +1,23 @@
+﻿Build started 2014-06-05 00:35:07.
+     1>Project "C:\Ludosity\Steamworks\SteamAPIWrap\SteamWrap.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         SteamWrap.vcxproj -> C:\Ludosity\Steamworks\Debug\SteamworksNative.dll
+     1>matchmakingtypes.h(159): warning : C6340: Mismatch on sign: 'int' passed as _Param_(4) when some unsigned type is required in call to '_snprintf'.
+       PostBuildEvent:
+         copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\Normal\Assets\Plugins\SteamworksNative.dll"
+         copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\NormalTest\Assets\Plugins\SteamworksNative.dll"
+         copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\XNA\XNA\bin\x86\Debug\SteamworksNative.dll"
+         :VCEnd
+                 1 file(s) copied.
+         The system cannot find the path specified.
+                 1 file(s) copied.
+                 0 file(s) copied.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: The command "copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\Normal\Assets\Plugins\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\NormalTest\Assets\Plugins\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: copy "C:\Ludosity\Steamworks\Debug\SteamworksNative.dll" "C:\Ludosity\Steamworks\XNA\XNA\bin\x86\Debug\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "C:\Ludosity\Steamworks\SteamAPIWrap\SteamWrap.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.73

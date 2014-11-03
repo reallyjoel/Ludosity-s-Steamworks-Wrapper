@@ -1,0 +1,12 @@
+#ifndef MatchmakingPingResponse_h_interop_
+#define MatchmakingPingResponse_h_interop_
+
+ManagedSteam_API_Lite uptr MatchmakingPingResponse_CreateObject();
+
+ManagedSteam_API_Lite void MatchmakingPingResponse_DestroyObject(uptr obj);
+
+ManagedSteam_API_Lite void MatchmakingPingResponse_RegisterCallbacks(MatchmakingPingResponse_ServerRespondedCallback serverResponded, MatchmakingPingResponse_ServerFailedToRespond serverFailedToRespond);
+
+ManagedSteam_API_Lite void MatchmakingPingResponse_RemoveCallbacks();
+
+#endif // MatchmakingServerListResponse_h_interop_

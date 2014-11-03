@@ -1,0 +1,53 @@
+﻿Build started 2014-05-30 03:04:46.
+     1>Project "C:\Ludosity\Steamworks\SteamAPIWrap\SteamWrap.vcxproj" on node 2 (Build target(s)).
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Intermediate\Debug Lite\SteamAPIWrap.res" SteamAPIWrap.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" /INCREMENTAL /NOLOGO steam_api.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.lib" /MACHINE:X86 /SAFESEH /DLL "Intermediate\Debug Lite\SteamAPIWrap.res"
+         "Intermediate\Debug Lite\Apps.obj"
+         "Intermediate\Debug Lite\Friends.obj"
+         "Intermediate\Debug Lite\GameServer.obj"
+         "Intermediate\Debug Lite\GameServerStats.obj"
+         "Intermediate\Debug Lite\Helper.obj"
+         "Intermediate\Debug Lite\Hmd.obj"
+         "Intermediate\Debug Lite\HTTP.obj"
+         "Intermediate\Debug Lite\MatchMaking.obj"
+         "Intermediate\Debug Lite\MatchmakingPingResponse.obj"
+         "Intermediate\Debug Lite\MatchmakingPlayersResponse.obj"
+         "Intermediate\Debug Lite\MatchmakingRulesResponse.obj"
+         "Intermediate\Debug Lite\MatchmakingServerListResponse.obj"
+         "Intermediate\Debug Lite\Networking.obj"
+         "Intermediate\Debug Lite\Precompiled.obj"
+         "Intermediate\Debug Lite\Cloud.obj"
+         "Intermediate\Debug Lite\Screenshots.obj"
+         "Intermediate\Debug Lite\Services.obj"
+         "Intermediate\Debug Lite\ServicesGameServer.obj"
+         "Intermediate\Debug Lite\Singleton.obj"
+         "Intermediate\Debug Lite\Stats.obj"
+         "Intermediate\Debug Lite\MatchMakingServers.obj"
+         "Intermediate\Debug Lite\SteamController.obj"
+         "Intermediate\Debug Lite\UGC.obj"
+         "Intermediate\Debug Lite\User.obj"
+         "Intermediate\Debug Lite\Utils.obj"
+         "Intermediate\Debug Lite\VersionInfo.obj"
+            Creating library C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.lib and object C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.exp
+         SteamWrap.vcxproj -> C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll
+     1>matchmakingtypes.h(159): warning : C6340: Mismatch on sign: 'int' passed as _Param_(4) when some unsigned type is required in call to '_snprintf'.
+       PostBuildEvent:
+         copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\Lite\Assets\Plugins\SteamworksNative.dll"
+         copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\LiteTest\Assets\Plugins\SteamworksNative.dll"
+         copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\XNA\XNA\bin\x86\Debug Lite\SteamworksNative.dll"
+         :VCEnd
+                 1 file(s) copied.
+                 1 file(s) copied.
+         The system cannot find the path specified.
+                 0 file(s) copied.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: The command "copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\Lite\Assets\Plugins\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\UnityProjects\LiteTest\Assets\Plugins\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: copy "C:\Ludosity\Steamworks\Debug Lite\SteamworksNative.dll" "C:\Ludosity\Steamworks\XNA\XNA\bin\x86\Debug Lite\SteamworksNative.dll"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppCommon.targets(134,5): error MSB3073: :VCEnd" exited with code 1.
+     1>Done Building Project "C:\Ludosity\Steamworks\SteamAPIWrap\SteamWrap.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.33

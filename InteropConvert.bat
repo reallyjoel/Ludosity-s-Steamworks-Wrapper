@@ -1,0 +1,2 @@
+"Tools\InteropSignatureToolkit\sigimp.exe" /lang:cs /genPreProc:yes /out:ManagedSteam\Generated\InteropMain.cs /includePath:SteamworksSDK\public\steam /nologo SteamAPIWrap\InteropMain.h
+"Tools\InteropDllFixer.exe" ManagedSteam\Generated\InteropMain.cs SteamworksNative

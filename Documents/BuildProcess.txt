@@ -1,0 +1,50 @@
+When all coding changes are done.
+
+On Windows:
+	Make sure that there is no Steam files in the Unity project. (libsteam_api.dylib, steam_api.dll)
+
+	Increase the minor version by one in the Documentation\UnitySteamworksDocumentation.docx file 
+	if new features have been added.
+	
+	Append the Changelog list in UnitySteamworksDocumentation.
+
+	Open Unity and use the "Asset Store Tools|Packet Manager", to update the Version changes field.
+
+	Close Unity.
+	
+	Update hg.
+	Commit all changes.
+	Update hg so we avoid mixed revisions.
+
+	Rebuild the solution in both Release and Release Lite mode in VS.
+
+	Update the "UnityProjects\Release\Assets\AssetStore\asset_store.json" and 
+	"UnityProjects\Release Lite\Assets\AssetStore\asset_store.json" files with the newest version number.
+
+	Commit all the automatically updated files, the built files and the updated documentation.
+
+
+On Mac:
+	Close Unity.
+	Update from hg.
+	Add any new .cpp, .hpp and .h files from the SteamAPIWrap folder to the xcode project. (Not Precompiled.cpp)
+		Place the files in the Source folder.
+	Build Release and Release Lite on Mac with Xcode.
+	Commit mac files.
+
+
+On Windows:
+	Update from hg
+	Create package in Unity.
+
+	Submit to the Asset Store
+	Copy the built .unitypackage file into the Build folder and change the name to the current version number.
+
+	Add a new entry to the ChangeLogTemplate.cs file and "hard code" the version number for the recently released
+	version.
+
+	Commit.
+
+	Create a new tag in hg named after the newest version number. The tag shall be of the 
+	revision created when committing. (The latest revision in the repository unless 
+	someone else is working at the same time.)

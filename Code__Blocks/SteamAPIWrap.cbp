@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SteamAPIWrap" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libSteamAPIWrap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libSteamAPIWrap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Release Lite">
+				<Option output="bin/Release Lite/libSteamAPIWrap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release Lite/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSTEAMAPIWRAP_LITE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DVERSION_SAFE_STEAM_API_INTERFACES" />
+			<Add directory="../SteamworksSDK/public/steam" />
+			<Add directory="../ManagedSteam/SharedEnums" />
+		</Compiler>
+		<Linker>
+			<Add library="../SteamworksSDK/redistributable_bin/linux32/libsteam.so" />
+			<Add library="../SteamworksSDK/redistributable_bin/linux32/libsteam_api.so" />
+			<Add library="../SteamworksSDK/redistributable_bin/linux32/steamclient.so" />
+			<Add directory="../SteamworksSDK/redistributable_bin/linux32" />
+		</Linker>
+		<Unit filename="../SteamAPIWrap/Apps.cpp" />
+		<Unit filename="../SteamAPIWrap/Apps.h" />
+		<Unit filename="../SteamAPIWrap/Apps.hpp" />
+		<Unit filename="../SteamAPIWrap/CallbackID.hpp" />
+		<Unit filename="../SteamAPIWrap/Cloud.cpp" />
+		<Unit filename="../SteamAPIWrap/Cloud.h" />
+		<Unit filename="../SteamAPIWrap/Cloud.hpp" />
+		<Unit filename="../SteamAPIWrap/ConvertedStructures.hpp" />
+		<Unit filename="../SteamAPIWrap/ErrorCodes.hpp" />
+		<Unit filename="../SteamAPIWrap/Friends.cpp" />
+		<Unit filename="../SteamAPIWrap/Friends.h" />
+		<Unit filename="../SteamAPIWrap/Friends.hpp" />
+		<Unit filename="../SteamAPIWrap/GameServer.cpp" />
+		<Unit filename="../SteamAPIWrap/GameServer.h" />
+		<Unit filename="../SteamAPIWrap/GameServer.hpp" />
+		<Unit filename="../SteamAPIWrap/GameServerCallbackID.hpp" />
+		<Unit filename="../SteamAPIWrap/GameServerResultID.hpp" />
+		<Unit filename="../SteamAPIWrap/GameServerStats.cpp" />
+		<Unit filename="../SteamAPIWrap/GameServerStats.h" />
+		<Unit filename="../SteamAPIWrap/GameServerStats.hpp" />
+		<Unit filename="../SteamAPIWrap/HTTP.cpp" />
+		<Unit filename="../SteamAPIWrap/HTTP.h" />
+		<Unit filename="../SteamAPIWrap/HTTP.hpp" />
+		<Unit filename="../SteamAPIWrap/Helper.cpp" />
+		<Unit filename="../SteamAPIWrap/Helper.hpp" />
+		<Unit filename="../SteamAPIWrap/InteropMain.h" />
+		<Unit filename="../SteamAPIWrap/LoadStatus.hpp" />
+		<Unit filename="../SteamAPIWrap/Macros.hpp" />
+		<Unit filename="../SteamAPIWrap/ManagedCallback.h" />
+		<Unit filename="../SteamAPIWrap/MatchMaking.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchMaking.h" />
+		<Unit filename="../SteamAPIWrap/MatchMaking.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchMakingRulesResponse.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchMakingServers.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchMakingServers.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPingResponse.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPingResponse.h" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPingResponse.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPlayersResponse.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPlayersResponse.h" />
+		<Unit filename="../SteamAPIWrap/MatchmakingPlayersResponse.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingRulesResponse.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingRulesResponse.h" />
+		<Unit filename="../SteamAPIWrap/MatchmakingServerListResponse.cpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingServerListResponse.h" />
+		<Unit filename="../SteamAPIWrap/MatchmakingServerListResponse.hpp" />
+		<Unit filename="../SteamAPIWrap/MatchmakingServers.h" />
+		<Unit filename="../SteamAPIWrap/MemoryHelpers.h" />
+		<Unit filename="../SteamAPIWrap/Networking.cpp" />
+		<Unit filename="../SteamAPIWrap/Networking.h" />
+		<Unit filename="../SteamAPIWrap/Networking.hpp" />
+		<Unit filename="../SteamAPIWrap/OverlayDialog.hpp" />
+		<Unit filename="../SteamAPIWrap/OverlayDialogToUser.hpp" />
+		<Unit filename="../SteamAPIWrap/Precompiled.cpp" />
+		<Unit filename="../SteamAPIWrap/Precompiled.hpp" />
+		<Unit filename="../SteamAPIWrap/ResultID.hpp" />
+		<Unit filename="../SteamAPIWrap/Screenshots.cpp" />
+		<Unit filename="../SteamAPIWrap/Screenshots.h" />
+		<Unit filename="../SteamAPIWrap/Screenshots.hpp" />
+		<Unit filename="../SteamAPIWrap/Services.cpp" />
+		<Unit filename="../SteamAPIWrap/Services.h" />
+		<Unit filename="../SteamAPIWrap/Services.hpp" />
+		<Unit filename="../SteamAPIWrap/ServicesGameServer.cpp" />
+		<Unit filename="../SteamAPIWrap/ServicesGameServer.h" />
+		<Unit filename="../SteamAPIWrap/ServicesGameServer.hpp" />
+		<Unit filename="../SteamAPIWrap/Singleton.cpp" />
+		<Unit filename="../SteamAPIWrap/Singleton.hpp" />
+		<Unit filename="../SteamAPIWrap/Stats.cpp" />
+		<Unit filename="../SteamAPIWrap/Stats.h" />
+		<Unit filename="../SteamAPIWrap/Stats.hpp" />
+		<Unit filename="../SteamAPIWrap/Types.h" />
+		<Unit filename="../SteamAPIWrap/User.cpp" />
+		<Unit filename="../SteamAPIWrap/User.h" />
+		<Unit filename="../SteamAPIWrap/User.hpp" />
+		<Unit filename="../SteamAPIWrap/Utils.cpp" />
+		<Unit filename="../SteamAPIWrap/Utils.h" />
+		<Unit filename="../SteamAPIWrap/Utils.hpp" />
+		<Unit filename="../SteamAPIWrap/VersionInfo.cpp" />
+		<Unit filename="../SteamAPIWrap/VersionInfo.hpp" />
+		<Unit filename="../SteamAPIWrap/resource.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
